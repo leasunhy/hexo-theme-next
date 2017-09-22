@@ -22,7 +22,7 @@ keywords: "Hexo, NexT"
 rss:
 
 # Specify the date when the site was setup
-#since: 2015
+since: 2016
 
 # icon between year and author @Footer
 authoricon: heart
@@ -60,8 +60,8 @@ index_with_subtitle: false
 menu:
   home: / || home
   #about: /about/ || user
-  #tags: /tags/ || tags
-  #categories: /categories/ || th
+  tags: /tags/ || tags
+  categories: /categories/ || th
   archives: /archives/ || archive
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
@@ -77,9 +77,9 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+#scheme: Muse
 #scheme: Mist
-#scheme: Pisces
+scheme: Pisces
 #scheme: Gemini
 
 
@@ -117,9 +117,10 @@ social_icons:
   #Title: http://example.com/
 
 # Sidebar Avatar
-# in theme directory(source/images): /images/avatar.gif
-# in site  directory(source/uploads): /uploads/avatar.gif
-#avatar: /images/avatar.gif
+# in theme directory(source/images): /images/avatar.jpg
+# in site  directory(source/uploads): /uploads/avatar.jpg
+avatar:
+    /images/avatar.jpg
 
 # Table Of Contents in the Sidebar
 toc:
@@ -161,7 +162,7 @@ sidebar:
 
   # Scroll percent label in b2t button
   scrollpercent: false
-
+  
   # Enable sidebar on narrow view
   onmobile: false
 
@@ -239,6 +240,7 @@ custom_logo:
   enabled: false
   image:
 
+
 # Code Highlight theme
 # Available value:
 #    normal | night | night eighties | night blue | night bright
@@ -259,7 +261,7 @@ highlight_theme: normal
 # Arial | Tahoma | Helvetica | Times New Roman | Courier New | Verdana | Georgia | Palatino | Garamond | Comic Sans MS | Trebuchet MS
 # ---------------------------------------------------------------
 font:
-  enable: false
+  enable: true
 
   # Uri of fonts host. E.g. //fonts.googleapis.com (Default).
   host:
@@ -271,6 +273,7 @@ font:
 
   # Global font settings used on <body> element.
   global:
+    # external: true will load this font family from host.
     external: true
     family: Lato
     size:
@@ -290,6 +293,7 @@ font:
 
   # Font settings for Logo.
   # Fallback to `global` font settings.
+  # The `size` option use `px` as unit
   logo:
     external: true
     family:
@@ -308,7 +312,7 @@ font:
 
 # MathJax Support
 mathjax:
-  enable: false
+  enable: true
   per_page: false
   cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
 
@@ -326,8 +330,8 @@ han: false
 
 # Disqus
 disqus:
-  enable: false
-  shortname:
+  enable: true
+  shortname: leasunhy-blog
   count: true
 
 # Hypercomments
@@ -371,6 +375,7 @@ valine:
 # And you can find the use guide at official webiste: http://www.jiathis.com/.
 # Warning: JiaThis does not support https.
 #jiathis:
+# Warning: JiaThis does not support https.
   ##uid: Get this uid from http://www.jiathis.com/
 #add_this_id:
 
@@ -382,7 +387,7 @@ valine:
 #google_site_verification:
 
 # Google Analytics
-#google_analytics:
+google_analytics: 65153179-1
 
 # Bing Webmaster tools verification setting
 # See: https://www.bing.com/webmaster/
@@ -456,7 +461,7 @@ leancloud_visitors:
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
   # count values only if the other configs are false
-  enable: false
+  enable: true
   # custom uv span for the whole site
   site_uv: true
   site_uv_header: <i class="fa fa-user"></i>
@@ -467,7 +472,7 @@ busuanzi_count:
   site_pv_footer:
   # custom pv span for one page only
   page_pv: true
-  page_pv_header: <i class="fa fa-file-o"></i>
+  page_pv_header: <i class="fa fa-eye"></i>
   page_pv_footer:
 
 
@@ -580,7 +585,7 @@ motion:
 fancybox: true
 
 # Progress bar in the top during page loading.
-pace: false
+pace: true
 # Themes list:
 #pace-theme-big-counter
 #pace-theme-bounce
