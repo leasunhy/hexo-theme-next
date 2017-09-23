@@ -341,4 +341,5 @@ Contribution is welcome, feel free to open an issue and fork. Waiting for your p
 
 1. Replaced the default config file with my own one.
 2. Modified `layout/index.swig` to allow the posts to specify a `visible` property, which hides the post on the index page if it is set to false. Read [this post](http://forwardkth.github.io/2016/05/08/next-theme-post-visibility/) for more information.
+3. Modified `source/js/utils.js` to add `nofancybox` support.
 
