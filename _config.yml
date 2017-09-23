@@ -104,6 +104,7 @@ social:
   #YouTube: https://youtube.com/yourname || youtube
   #Instagram: https://instagram.com/yourname || instagram
   #Skype: skype:yourname?call|chat || skype
+  LinkedIn: https://linkedin.com/in/leasunhy/ || linkedin
 
 social_icons:
   enable: true
